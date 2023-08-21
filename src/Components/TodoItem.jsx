@@ -1,9 +1,9 @@
-function TodoItem({title}) {
+function TodoItem({todo, setTodos}) {
   
   return (
-      <li>
-        <p>{title}</p>
-        <button>Delete</button>
+      <li key={todo.id}>
+        <p>{todo.title}</p>
+        <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
       </li>
     )
 }

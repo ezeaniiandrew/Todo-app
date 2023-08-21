@@ -1,10 +1,10 @@
 import TodoItem from "./TodoItem"
 
-function Todos({todos}){
-  console.log(todos)
+function Todos({todos, setTodos}){
+  
   return (
       <ul>
-        {todos.map(todo => <TodoItem key={todo.title} title={todo.title} />)}
+        {todos.map((todo) => <TodoItem key={todo.id} todo={todo} setTodos={setTodos} />)}
       </ul>
     )
 }
