@@ -1,4 +1,4 @@
-function TodoItem({todo}) {
+function TodoItem({todo, setTodos}) {
   
   const handleDeleteTodo = (id) => {
     setTodos((prevTodos) => prevTodos.filter(todo => id !== todo.id))

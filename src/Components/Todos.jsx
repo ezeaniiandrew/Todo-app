@@ -6,7 +6,8 @@ function Todos({todos, setTodos}){
       <ul>
       {/*Passed the setTodos function to the
       TodoItem Component*/}
-        {todos.map((todo) => <TodoItem key={todo.id} todo={todo} />)}
+        {todos.map((todo) => <TodoItem key={todo.id} todo={todo}
+        setTodos={setTodos} />)}
       </ul>
     )
 }
