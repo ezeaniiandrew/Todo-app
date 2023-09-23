@@ -17,6 +17,8 @@ function App() {
     <div>
       <h1>Todo App</h1>
       <Input setTodos={setTodos} />
+      {/*Passed the setTodos function as a 
+      prop to the Todos component*/}
       <Todos todos={todos} setTodos={setTodos} />
     </div>
   )
